@@ -11,7 +11,7 @@ type Config struct {
 }
 
 func InitConfig() (c Config) {
-	viper.SetConfigFile("configs/envs/dev.env")
+	viper.SetConfigFile("./dev.env")
 	viper.AutomaticEnv()
 
 	err := viper.ReadInConfig()
